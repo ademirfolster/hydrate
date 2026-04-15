@@ -79,8 +79,8 @@ body {
 
 .button-header a {
   background-color: #ff4d03;
-  border: 1px solid transparent;
-  border-radius: 10px;
+
+  border-radius: 20px;
   padding: 7px 22px;
   text-decoration: none;
   color: white;
@@ -92,7 +92,6 @@ body {
 .button-header a:hover {
   background-color: #ffe2d5;
   color: black;
-  border: 1px solid #ff4d03;
 }
 
 .main-content {
@@ -120,8 +119,38 @@ body {
   font-weight: bold;
 }
 
+.subtitle {
+  margin-bottom: 6%;
+}
+
 .subtitle p {
   color: #ffe2d5;
   text-align: center;
   font-weight: lighter;
+  cursor: default;
+}
+
+.subtitle span {
+  color: #ff4d03;
+}
+
+.button-main {
+  text-align: center;
+}
+
+.button-main a {
+  background-color: #ff4d03;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.button-main a:hover {
+  background-color: #ffe2d5;
+  color: black;
 }
