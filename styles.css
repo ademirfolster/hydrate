@@ -94,3 +94,34 @@ body {
   color: black;
   border: 1px solid #ff4d03;
 }
+
+.main-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 6% 0 32px 0;
+}
+
+.title {
+  cursor: default;
+}
+
+.title h1 {
+  color: white;
+  text-align: center;
+  font-family: var(--font-main);
+  letter-spacing: 0.1rem;
+  line-height: 1.2em;
+  margin-bottom: 5%;
+  font-weight: 600;
+}
+
+.title span {
+  color: #ff4d03;
+  font-weight: bold;
+}
+
+.subtitle p {
+  color: #ffe2d5;
+  text-align: center;
+  font-weight: lighter;
+}
