@@ -1,7 +1,15 @@
+@import url("https://fonts.cdnfonts.com/css/canela-text-trial");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --font-main: "Canela Deck Trial", sans-serif;
+  --font-general: "Satoshi", sans-serif;
 }
 
 body {
@@ -12,17 +20,77 @@ body {
   max-height: 100vh;
   height: 100%;
   background-color: #032427;
+  font-family: var(--font-general);
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 92%;
+  width: 100%;
+  padding: 0 2%;
+  height: 70px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
 }
 
-.logo a {
+.logo {
   display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
   text-decoration: none;
   color: white;
+  font-size: 1.31rem;
+  font-family: var(--font-main);
+}
+
+.logo svg,
+.logo span {
+  color: #ff4d03;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.logo p {
+  font-size: 1em;
+  line-height: 1;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  opacity: 50%;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.navbar a:hover {
+  opacity: 100%;
+  text-decoration: underline;
+}
+
+.button-header a {
+  background-color: #ff4d03;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 7px 22px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.button-header a:hover {
+  background-color: #ffe2d5;
+  color: black;
+  border: 1px solid #ff4d03;
 }
